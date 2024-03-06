@@ -16,6 +16,9 @@ const convert = function () {
   }
 };
 
-btn.addEventListener("click", () => convert());
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  convert();
+});
 
 goBtn.addEventListener("click", () => window.open(converted.value));

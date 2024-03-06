@@ -13,25 +13,35 @@
         ><u>Click Here</u>&nbsp;to Find Invidious Instance</a
       >
     </p>
-    <input
-      type="text"
-      name="invidious-link"
-      id="invidious"
-      class="link"
-      placeholder="Paste Invidious instance link ex - 'yewtu.be' "
-    />
-    <h1>Insert YouTube Link</h1>
-    <input
-      type="text"
-      name="yt-link"
-      id="yt"
-      class="link"
-      placeholder="Paste the YouTube Link"
-    />
+    <form>
+      <input
+        type="text"
+        name="invidious-link"
+        id="invidious"
+        class="link"
+        placeholder="Paste Invidious instance link ex - 'yewtu.be' "
+        autocomplete="on"
+      />
+      <h1>Insert YouTube Link</h1>
+      <input
+        type="text"
+        name="yt-link"
+        id="yt"
+        class="link"
+        placeholder="Paste the YouTube Link"
+        autocomplete="off"
+      />
 
-    <h1>Converted Link</h1>
-    <input type="text" name="converted" id="converted" class="link" readonly />
-    <input type="button" value="Generate" class="btn" />
+      <h1>Converted Link</h1>
+      <input
+        type="text"
+        name="converted"
+        id="converted"
+        class="link"
+        readonly
+      />
+      <button type="submit" class="btn">Generate</button>
+    </form>
     <input
       type="button"
       value="Go  &#8594;"
