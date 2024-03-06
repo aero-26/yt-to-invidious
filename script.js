@@ -11,6 +11,7 @@ const convert = function () {
   let b = ytTextArea.value;
   if (a != "" && b != "") {
     let replace = b.replace("www.youtube.com", a);
+    replace = b.replace("youtu.be", a);
     converted.value = replace;
     goBtn.classList.remove("hidden");
   }
