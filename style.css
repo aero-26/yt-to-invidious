@@ -2,7 +2,7 @@
   font-family: "GoldleafBold";
   src: url(./font/GoldleafBold.ttf);
 }
-@font-face{
+@font-face {
   font-family: "Verdana";
   src: url(./font/verdana.ttf);
 }
@@ -62,4 +62,27 @@ a {
 
 .hidden {
   display: none;
+}
+@media screen and (max-width: 525px) {
+  .link {
+    max-width: 25rem;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .link {
+    max-width: 23rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .link {
+    max-width: 20rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .link {
+    max-width: 18rem;
+  }
 }
