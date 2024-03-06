@@ -21,4 +21,6 @@ btn.addEventListener("click", (e) => {
   convert();
 });
 
-goBtn.addEventListener("click", () => window.open(converted.value));
+goBtn.addEventListener("click", () => {
+  window.open(converted.value);
+});
