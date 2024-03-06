@@ -1,3 +1,65 @@
+@font-face {
+  font-family: "GoldleafBold";
+  src: url(/font/GoldleafBold.ttf);
+}
+@font-face {
+  font-family: "Verdana";
+  src: url(/font/verdana.ttf);
+}
+
 body {
   background-color: #35374b;
+  color: white;
+}
+
+h1 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: "GoldleafBold";
+  font-weight: lighter;
+}
+
+a {
+  color: rgb(255, 179, 0);
+  font-family: Verdana;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  width: 31.25rem;
+  height: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: 5px;
+  color: blue;
+}
+
+.link:focus-visible {
+  outline: rgb(0, 128, 255) solid 3px;
+}
+
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  height: 35px;
+  width: 100px;
+  font-family: Verdana;
+  border-radius: 5px;
+  background-color: #0075b9;
+  border: 1px solid white;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+}
+
+.hidden {
+  display: none;
 }
