@@ -17,8 +17,8 @@ const convert = function () {
       let replace = b.replace("youtu.be", a);
       converted.value = replace;
     }
+    goBtn.classList.remove("hidden");
   }
-  goBtn.classList.remove("hidden");
 };
 
 btn.addEventListener("click", (e) => {
