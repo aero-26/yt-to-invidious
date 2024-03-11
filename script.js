@@ -1,5 +1,6 @@
 "use strict";
 
+// List of invidiouis Domains
 const invidiousDomains = [
   "yewtu.be",
   "vid.puffyan.us",
@@ -28,12 +29,15 @@ const invidiousDomains = [
   "youtube.owacon.moe",
   "invidious.jing.rocks",
 ];
+
+// Selectors for textarea and buttons
 const inviTextArea = document.getElementById("invidious");
 const ytTextArea = document.getElementById("yt");
 const btn = document.getElementsByClassName("btn-instance")[2];
 const converted = document.getElementById("converted");
 const goBtn = document.getElementById("go");
 
+// Function to convert the youtube link to invidious one
 const convert = function () {
   let a = inviTextArea.value;
   let b = ytTextArea.value;
@@ -49,6 +53,7 @@ const convert = function () {
   }
 };
 
+// Adding event listener to generate button and Redirect button
 btn.addEventListener("click", (e) => {
   e.preventDefault();
   convert();
