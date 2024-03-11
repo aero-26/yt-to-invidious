@@ -49,9 +49,8 @@ const convert = function () {
       if (b.search("playlist" != -1)) {
         let replace = b.replace("www.youtube.com", a);
         converted.value = replace;
-      }
-      if (b.search("playlist") == -1) {
-        let replace = b.replace("www.youtube.com/", a + "/watch?v=");
+      } else if (b.search("playlist") == -1) {
+        let replace = b.replace("www.youtube.com/", a);
         converted.value = replace;
       }
     } else {
