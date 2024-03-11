@@ -1,8 +1,7 @@
 {
   "name": "Youtube-Invidious",
   "short_name": "Youtube-Invi",
-  "start_url": "/index.html",
-  "display": "standalone",
+  "start_url": "https://aero-26.github.io/yt-to-invidious/",
   "background_color": "#78A083",
   "theme_color": "#35374b",
   "orientation": "portrait-primary",
