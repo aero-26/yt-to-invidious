@@ -22,7 +22,13 @@
         class="link"
         placeholder="Paste Invidious domain ex - 'yewtu.be' "
         autocomplete="on"
-      />
+      /> 
+      <div>
+    <div class="instance-div">
+      <button style="background-color: orangered"  class="btn-instance">Open</button>
+      <button style="background-color: #0075b9" class="btn-instance">New Instance</button>
+    </div>
+
       <h1>Insert YouTube Link</h1>
       <input
         type="text"
@@ -42,9 +48,12 @@
         readonly
       />
 
-      <button class="btn">Generate</button>
+      <div class="instance-div">
+      <button class="btn-instance">Generate</button>
 
-      <button class="btn hidden" id="go" type="submit" style="background-color: orangered;">Go &#8594</button>
+      <button class="btn-instance hidden" id="go" type="submit" style="background-color: orangered;">Go &#8594</button>
+
+      </div>
     </form>
 
     <script src="script.js"></script>

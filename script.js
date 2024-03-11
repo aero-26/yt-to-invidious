@@ -30,7 +30,7 @@ const invidiousDomains = [
 ];
 const inviTextArea = document.getElementById("invidious");
 const ytTextArea = document.getElementById("yt");
-const btn = document.getElementsByClassName("btn")[0];
+const btn = document.getElementsByClassName("btn-instance")[2];
 const converted = document.getElementById("converted");
 const goBtn = document.getElementById("go");
 
@@ -54,6 +54,7 @@ btn.addEventListener("click", (e) => {
   convert();
 });
 
-goBtn.addEventListener("click", () => {
-  window.open(converted.value);
+goBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.open(converted.value, "_self");
 });
