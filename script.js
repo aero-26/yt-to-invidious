@@ -45,9 +45,14 @@ const convert = function () {
   let a = inviTextArea.value;
   let b = ytTextArea.value;
   if (a != "" && b != "") {
-    if (b.search("youtu.be") == -1) {
-      let replace = b.replace("www.youtube.com", a);
-      converted.value = replace;
+    if (b.search("youtu.be") === -1) {
+      if (b.search("www.youtube.com") !== -1) {
+        let replace = b.replace("www.youtube.com", a);
+        converted.value = replace;
+      } else if (b.search("www.youtube.com") === -1) {
+        let replace = b.replace("youtube.com", a);
+        converted.value = replace;
+      }
     } else {
       let replace = b.replace("youtu.be/", a + "/watch?v=");
       converted.value = replace;
