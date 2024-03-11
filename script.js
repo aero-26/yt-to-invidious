@@ -1,5 +1,33 @@
 "use strict";
 
+const invidiousDomains = [
+  "yewtu.be",
+  "vid.puffyan.us",
+  "yt.artemislena.eu",
+  "invidious.flokinet.to",
+  "invidious.projectsegfau.lt",
+  "invidious.privacydev.net",
+  "iv.melmac.space",
+  "iv.ggtyler.dev",
+  "invidious.lunar.icu",
+  "inv.nadeko.net",
+  "inv.tux.pizza",
+  "invidious.protokolla.fi",
+  "iv.nboeck.de",
+  "invidious.private.coffee",
+  "yt.drgnz.club",
+  "iv.datura.network",
+  "invidious.fdn.fr",
+  "invidious.perennialte.ch",
+  "yt.cdaut.de",
+  "invidious.drgns.space",
+  "inv.us.projectsegfau.lt",
+  "invidious.einfachzocken.eu",
+  "invidious.nerdvpn.de",
+  "inv.n8pjl.ca",
+  "youtube.owacon.moe",
+  "invidious.jing.rocks",
+];
 const inviTextArea = document.getElementById("invidious");
 const ytTextArea = document.getElementById("yt");
 const btn = document.getElementsByClassName("btn")[0];
