@@ -117,5 +117,5 @@ genBtn.addEventListener("click", (e) => {
 goBtn.addEventListener("click", (e) => {
   e.preventDefault();
   openLink(converted.value);
-  ytTextArea = "";
+  ytTextArea.value = "";
 });
